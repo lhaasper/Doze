@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="include\auto.hpp" />
+    <ClInclude Include="include\base.hpp" />
+    <ClInclude Include="include\win32.hpp" />
+    <ClInclude Include="io\control.hpp" />
+    <ClInclude Include="win32\process.hpp" />
+    <ClInclude Include="memory\operation.hpp" />
+    <ClInclude Include="memory\scan.hpp" />
+    <ClInclude Include="win32\image.hpp" />
+    <ClInclude Include="kernel\import.hpp" />
+    <ClInclude Include="kernel\erase.hpp" />
+    <ClInclude Include="win32\resource_lite.hpp" />
+    <ClInclude Include="win32\critical_region.hpp" />
+    <ClInclude Include="win32\sdk\portable_executable.hpp" />
+    <ClInclude Include="win32\trace.hpp" />
+    <ClInclude Include="win32\sdk\image_dos_header.hpp" />
+    <ClInclude Include="win32\sdk\image_file_header.hpp" />
+    <ClInclude Include="win32\sdk\image_data_directory.hpp" />
+    <ClInclude Include="win32\sdk\image_optional_header.hpp" />
+    <ClInclude Include="win32\sdk\image_nt_headers.hpp" />
+    <ClInclude Include="win32\sdk\image_export_directory.hpp" />
+    <ClInclude Include="win32\sdk\list_entry.hpp" />
+    <ClInclude Include="win32\sdk\string.hpp" />
+    <ClInclude Include="win32\sdk\unicode_string.hpp" />
+    <ClInclude Include="win32\sdk\peb_ldr_data.hpp" />
+    <ClInclude Include="win32\sdk\peb.hpp" />
+    <ClInclude Include="win32\sdk\ldr_data_table_entry.hpp" />
+    <ClInclude Include="win32\sdk\client_id.hpp" />
+    <ClInclude Include="win32\sdk\nt_tib.hpp" />
+    <ClInclude Include="win32\sdk\teb.hpp" />
+    <ClInclude Include="win32\sdk\image_section_header.hpp" />
+    <ClInclude Include="core\no_copy.hpp" />
+    <ClInclude Include="core\no_move.hpp" />
+    <ClInclude Include="core\singleton.hpp" />
+    <ClInclude Include="win32\sdk\mmpte_hardware.hpp" />
+    <ClInclude Include="win32\sdk\mmpte_prototype.hpp" />
+    <ClInclude Include="win32\sdk\mmpte_software.hpp" />
+    <ClInclude Include="win32\sdk\mmpte_timestamp.hpp" />
+    <ClInclude Include="win32\sdk\mmpte_transition.hpp" />
+    <ClInclude Include="win32\sdk\mmpte_subsection.hpp" />
+    <ClInclude Include="win32\sdk\mmpte_list.hpp" />
+    <ClInclude Include="win32\sdk\mmpte.hpp" />
+    <ClInclude Include="win32\sdk\system_information_class.hpp" />
+    <ClInclude Include="win32\sdk\rtl_process_modules.hpp" />
+    <ClInclude Include="win32\sdk\pml4e.hpp" />
+    <ClInclude Include="win32\sdk\pdpe.hpp" />
+    <ClInclude Include="win32\sdk\pde.hpp" />
+    <ClInclude Include="win32\sdk\pte.hpp" />
+    <ClInclude Include="win32\sdk\cr3.hpp" />
+    <ClInclude Include="win32\sdk\cr4.hpp" />
+    <ClInclude Include="win32\sdk\mmvad.hpp" />
+    <ClInclude Include="core\vector.hpp" />
+    <ClInclude Include="main\image_wipe_header.hpp" />
+    <ClInclude Include="main\dispatch_hook.hpp" />
+    <ClInclude Include="win32\page.hpp" />
+    <ClInclude Include="constant\hash.hpp" />
+    <ClInclude Include="constant\string.hpp" />
+    <ClInclude Include="constant\character.hpp" />
+    <ClInclude Include="memory\macro.hpp" />
+    <ClInclude Include="vcruntime\memory.hpp" />
+    <ClInclude Include="vcruntime\operator.hpp" />
+    <ClInclude Include="win32\sdk\pool_type.hpp" />
+    <ClInclude Include="atom\system_map_data.hpp" />
+    <ClInclude Include="io\packet.hpp" />
+    <ClInclude Include="win32\sdk\kldr_data_table_entry.hpp" />
+    <ClInclude Include="main\dispatch_image.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main\entry.cpp" />
+    <ClCompile Include="io\control.cpp" />
+    <ClCompile Include="win32\process.cpp" />
+    <ClCompile Include="memory\scan.cpp" />
+    <ClCompile Include="win32\image.cpp" />
+    <ClCompile Include="kernel\erase.cpp" />
+    <ClCompile Include="win32\resource_lite.cpp" />
+    <ClCompile Include="win32\critical_region.cpp" />
+    <ClCompile Include="memory\operation.cpp" />
+    <ClCompile Include="vcruntime\operator.cpp" />
+    <ClCompile Include="win32\trace.cpp" />
+    <ClCompile Include="main\image_wipe_header.cpp" />
+    <ClCompile Include="main\dispatch_hook.cpp" />
+    <ClCompile Include="win32\page.cpp" />
+    <ClCompile Include="vcruntime\memory.cpp" />
+    <ClCompile Include="atom\system_map_data.cpp" />
+    <ClCompile Include="main\dispatch_image.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="io\driver_unload.asm" />
+  </ItemGroup>
+</Project>

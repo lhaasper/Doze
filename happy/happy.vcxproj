@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{ABF9BAEA-3619-4F69-805B-921427BF55F5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>happy</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)_debug</TargetName>
+    <OutDir>$(SolutionDir)bin\x32\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(ProjectName)\x32\debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)_debug</TargetName>
+    <OutDir>$(SolutionDir)bin\x64\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(ProjectName)\x64\debug\</IntDir>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64;$(DDK_LibraryPath_DDKPlatform);</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(KM_IncludePath);$(KIT_SHARED_IncludePath);$(CRT_IncludePath);</IncludePath>
+    <ExecutablePath>$(VC_ExecutablePath_x64);$(CommonExecutablePath);$(WDKContentRoot)tools\tracing\x64</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\x32\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(ProjectName)\x32\release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\x64\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(ProjectName)\x64\release\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <UACExecutionLevel>HighestAvailable</UACExecutionLevel>
+      <AdditionalDependencies>diaguids.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <UACExecutionLevel>HighestAvailable</UACExecutionLevel>
+      <AdditionalDependencies>$(SolutionDir)bin\x64\diaguids.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Link>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <PreBuildEvent>
+      <Command>copy "$(SolutionDir)doze\doze.hpp" "$(ProjectDir)resource\doze.hpp"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="core\map_data.cpp" />
+    <ClCompile Include="core\string.cpp" />
+    <ClCompile Include="io\driver_control.cpp" />
+    <ClCompile Include="kernel\loader.cpp" />
+    <ClCompile Include="kernel\nt_system.cpp" />
+    <ClCompile Include="main\device_drivers.cpp" />
+    <ClCompile Include="main\dump.cpp" />
+    <ClCompile Include="main\privileges.cpp" />
+    <ClCompile Include="main\unloaded_drivers.cpp" />
+    <ClCompile Include="main\entry.cpp" />
+    <ClCompile Include="main\mmap.cpp" />
+    <ClCompile Include="memory\scan.cpp" />
+    <ClCompile Include="resource\intel.cpp" />
+    <ClCompile Include="resource\data_loader.cpp" />
+    <ClCompile Include="symbols\pdb_manager.cpp" />
+    <ClCompile Include="symbols\symbol_data.cpp" />
+    <ClCompile Include="symbols\symbol_loader.cpp" />
+    <ClCompile Include="win32\console.cpp" />
+    <ClCompile Include="win32\dialog.cpp" />
+    <ClCompile Include="win32\driver.cpp" />
+    <ClCompile Include="win32\exception.cpp" />
+    <ClCompile Include="win32\file.cpp" />
+    <ClCompile Include="win32\import_manager.cpp" />
+    <ClCompile Include="win32\initializer.cpp" />
+    <ClCompile Include="win32\native.cpp" />
+    <ClCompile Include="win32\pe_image.cpp" />
+    <ClCompile Include="win32\privilege.cpp" />
+    <ClCompile Include="win32\debug_trace.cpp" />
+    <ClCompile Include="win32\version.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="constant\character.hpp" />
+    <ClInclude Include="constant\hash.hpp" />
+    <ClInclude Include="constant\string.hpp" />
+    <ClInclude Include="core\map_data.hpp" />
+    <ClInclude Include="core\no_copy.hpp" />
+    <ClInclude Include="core\no_move.hpp" />
+    <ClInclude Include="core\singleton.hpp" />
+    <ClInclude Include="core\string.hpp" />
+    <ClInclude Include="core\timer.hpp" />
+    <ClInclude Include="dia\cvconst.h" />
+    <ClInclude Include="dia\dia2.h" />
+    <ClInclude Include="dia\diacreate.h" />
+    <ClInclude Include="include\handle_guard.hpp" />
+    <ClInclude Include="include\invoke_result.hpp" />
+    <ClInclude Include="krypton\driver_map_context.hpp" />
+    <ClInclude Include="include\auto.hpp" />
+    <ClInclude Include="include\base.hpp" />
+    <ClInclude Include="include\win32.hpp" />
+    <ClInclude Include="io\packet.hpp" />
+    <ClInclude Include="io\driver_control.hpp" />
+    <ClInclude Include="kernel\loader.hpp" />
+    <ClInclude Include="kernel\nt_system.hpp" />
+    <ClInclude Include="main\device_drivers.hpp" />
+    <ClInclude Include="main\dump.hpp" />
+    <ClInclude Include="main\privileges.hpp" />
+    <ClInclude Include="main\unloaded_drivers.hpp" />
+    <ClInclude Include="main\mmap.hpp" />
+    <ClInclude Include="memory\macro.hpp" />
+    <ClInclude Include="memory\operation.hpp" />
+    <ClInclude Include="memory\scan.hpp" />
+    <ClInclude Include="options\configuration.hpp" />
+    <ClInclude Include="resource\doze.hpp" />
+    <ClInclude Include="resource\herby.hpp" />
+    <ClInclude Include="resource\intel.hpp" />
+    <ClInclude Include="resource\data_loader.hpp" />
+    <ClInclude Include="resource\pubg.hpp" />
+    <ClInclude Include="symbols\pdb_manager.hpp" />
+    <ClInclude Include="symbols\symbol_data.hpp" />
+    <ClInclude Include="symbols\symbol_loader.hpp" />
+    <ClInclude Include="win32\console.hpp" />
+    <ClInclude Include="win32\dialog.hpp" />
+    <ClInclude Include="win32\driver.hpp" />
+    <ClInclude Include="win32\exception.hpp" />
+    <ClInclude Include="win32\file.hpp" />
+    <ClInclude Include="win32\handle_guard.hpp" />
+    <ClInclude Include="win32\import_manager.hpp" />
+    <ClInclude Include="win32\initializer.hpp" />
+    <ClInclude Include="win32\native.hpp" />
+    <ClInclude Include="win32\pe_image.hpp" />
+    <ClInclude Include="win32\privilege.hpp" />
+    <ClInclude Include="win32\debug_trace.hpp" />
+    <ClInclude Include="win32\stack_trace.hpp" />
+    <ClInclude Include="win32\version.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
