@@ -1,6 +1,6 @@
-# Doze
-If you made it in here I have no clue how, well hi
+Windows Kernel Mode Driver Project
 
-If you have any issues dont bother asking, I dont have a windows PC anymore tho meaning I wont rly be able to help
 
-it uses steam pointers for hooking... i have no clue rather this is detected or not... it has not been made public yet by anyone else (ig)
+This will from now on be archived since this is not a "showcase" project but rather a Sandbox project for testing purposes.
+
+This was last tested on 1/4/2022 and not detected (EAC/BE).
